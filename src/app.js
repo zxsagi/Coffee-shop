@@ -326,22 +326,8 @@ document.addEventListener("DOMContentLoaded", function () {
     contactForm.addEventListener("submit", function(e){
   
       e.preventDefault();
+      e.stopPropagation();
   
-      const inputs = contactForm.querySelectorAll("input");
-  
-      let isValid = true;
-  
-      inputs.forEach(input => {
-        if(input.value.trim() === ""){
-          isValid = false;
-        }
-      });
-  
-      if(!isValid){
-        return;
-      }
-  
-      // tampilkan toast
       toast.classList.add("show");
   
       setTimeout(() => {
