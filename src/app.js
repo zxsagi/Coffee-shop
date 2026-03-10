@@ -324,15 +324,20 @@ const toast = document.getElementById("toast-message");
 contactForm.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    // tampilkan toast
+    const inputs = contactForm.querySelectorAll("input, textarea");
+
+    for (let input of inputs) {
+        if (input.value.trim() === "") {
+            return;
+        }
+    }
+
     toast.classList.add("show");
 
-    // hilangkan setelah 3 detik
     setTimeout(() => {
         toast.classList.remove("show");
     }, 3000);
 
-    // reset form
     contactForm.reset();
 });
 
