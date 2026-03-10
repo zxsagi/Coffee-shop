@@ -318,28 +318,41 @@ ${rupiah(obj.total)}
 Terima Kasih`;
 };
 
-const contactForm = document.querySelector(".contact form");
-const toast = document.getElementById("toast-message");
+document.addEventListener("DOMContentLoaded", function () {
 
-contactForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-
-    const inputs = contactForm.querySelectorAll("input, textarea");
-
-    for (let input of inputs) {
-        if (input.value.trim() === "") {
-            return;
+    const contactForm = document.querySelector(".contact form");
+    const toast = document.getElementById("toast-message");
+  
+    contactForm.addEventListener("submit", function(e){
+  
+      e.preventDefault();
+  
+      const inputs = contactForm.querySelectorAll("input");
+  
+      let isValid = true;
+  
+      inputs.forEach(input => {
+        if(input.value.trim() === ""){
+          isValid = false;
         }
-    }
-
-    toast.classList.add("show");
-
-    setTimeout(() => {
+      });
+  
+      if(!isValid){
+        return;
+      }
+  
+      // tampilkan toast
+      toast.classList.add("show");
+  
+      setTimeout(() => {
         toast.classList.remove("show");
-    }, 3000);
-
-    contactForm.reset();
-});
+      }, 3000);
+  
+      contactForm.reset();
+  
+    });
+  
+  });
 
 // konversi ke rupiah
 const rupiah = (number) => {
