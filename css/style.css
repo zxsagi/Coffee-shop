@@ -74,6 +74,12 @@ body {
   transform: scaleX(0.5);
 }
 
+.navbar .navbar-extra {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* memberi jarak antar icon */
+}
+
 .navbar .navbar-extra a {
   color: #fff;
   margin: 0 0.5rem;
@@ -908,7 +914,7 @@ footer .credit a {
   html {
     font-size: 62.5%;
   }
-
+  
   #hamburger-menu {
     display: inline-block;
   }
