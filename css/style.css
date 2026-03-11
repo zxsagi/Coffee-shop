@@ -688,7 +688,7 @@ body {
 footer {
   background-color: var(--primary);
   text-align: center;
-  padding: 1rem 0 2rem;
+  padding: 1rem 0 1rem;
   margin-top: 3rem;
 }
 
@@ -699,6 +699,20 @@ footer .socials {
 footer .socials a {
   color: #fff;
   margin: 1rem;
+}
+
+/* Instagram */
+.socials a.instagram {
+  color: #FFA500;
+}
+
+.socials a.twitter {
+  color: #4169E1;
+}
+
+/* Facebook */
+.socials a.facebook {
+  color: #1877F2;
 }
 
 footer .socials a:hover,
