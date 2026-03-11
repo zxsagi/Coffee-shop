@@ -1,5 +1,5 @@
 :root {
-  --primary: #ed9c4b;
+  --primary: #B22222;
   --bg: #010101;
 
 }
@@ -30,7 +30,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.4rem 7%;
-  background-color: rgba(1, 1, 1, 0.8);
+  background-color: rgba(1, 25, 35, 0.8);
   border-bottom: 1px solid #513c28;
   position: fixed;
   top: 0;
@@ -620,11 +620,17 @@ body {
 .contact .row form .btn {
   margin-top: 3rem;
   display: inline-block;
+  border-radius: 8px;
   padding: 1rem 3rem;
   font-size: 1.7rem;
   color: #fff;
-  background-color: var(--primary);
+  background-color: rgba(218, 103, 9, 0.15);
   cursor: pointer;
+}
+
+.contact .row form .btn:hover {
+  color: #2ecc71;
+  background-color: var(--primary);
 }
 
 /* --------------------------- ALERT PESAN TERKIRIM KONTAK KAMI ---------------------------------------------------- */
@@ -680,7 +686,7 @@ body {
 
 /* Footer */
 footer {
-  background-color: #A52A2A;
+  background-color: var(--primary);
   text-align: center;
   padding: 1rem 0 2rem;
   margin-top: 3rem;

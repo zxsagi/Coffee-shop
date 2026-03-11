@@ -9,12 +9,12 @@ document.addEventListener('alpine:init', () => {
                 name: 'Robusta Brazil',
                 img: '1.jpg',
                 price: 25000,
-                rating: 4,
+                rating: 3,
                 description: 'Kopi robusta dengan aroma kuat dan rasa pahit yang khas dari Amerika.'
             },
             {
                 id: 2,
-                name: 'Arabica Blend',
+                name: 'Gayo Highland',
                 img: '2.jpg',
                 price: 35000,
                 rating: 4,
@@ -25,12 +25,12 @@ document.addEventListener('alpine:init', () => {
                 name: 'Arabica Blend',
                 img: '3.jpg',
                 price: 21000,
-                rating: 4,
+                rating: 5,
                 description: 'Kopi robusta dengan aroma kuat dan rasa pahit yang khas dari Amerika.'
             },
             {
                 id: 4,
-                name: 'Arabica Blend',
+                name: 'Robusta Sangrai ',
                 img: '4.jpg',
                 price: 27000,
                 rating: 4,
@@ -40,8 +40,8 @@ document.addEventListener('alpine:init', () => {
                 id: 5,
                 name: 'Biji Kopi Aceh',
                 img: '5.jpg',
-                price: 20000,
-                rating: 4,
+                price: 29000,
+                rating: 5,
                 description: 'Kopi robusta dengan aroma kuat dan rasa pahit yang khas dari Amerika.'
             },
         ],
